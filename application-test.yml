@@ -1,2 +1,12 @@
 server:
     port : 8020
+    
+my:
+    greeting: Hello world
+    list: 1,2,3,4
+    
+db:
+    connection:
+        url: "jdbc:sqlserver://mydbserver:1433;database"
+        uname: uname
+        pwd: pwd
