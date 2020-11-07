@@ -1,12 +1,19 @@
-server:
-    port : 8020
-    
-my:
-    greeting: Hello world
-    list: 1,2,3,4
-    
+app:
+    name: spring-boot-config-cloud
+    list: 1,2,4
+
 db:
-    connection:
-        url: "jdbc:sqlserver://mydbserver:1433;database"
-        uname: uname
-        pwd: pwd
+    connection: "{url:'jdbc://${db.host}:${db.port}/dbname}', user: 'root', pwd: 'rootpwd'}"
+    host: 127.0.0.1
+    port: 8080
+    
+spring:
+  cloud:
+    config:
+      uri:
+      - http://localhost:8888
+
+  application:
+    name: spring-boot-config
+    
+management.endpoints.web.exposure.include: refresh
