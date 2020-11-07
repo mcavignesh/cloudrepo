@@ -1,5 +1,5 @@
 app:
-    name: spring-boot-config-cloud-refresh
+    name: spring-boot-config-cloud
     list: 1,2,4
 
 db:
