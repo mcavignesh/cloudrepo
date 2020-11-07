@@ -4,7 +4,7 @@ app:
 
 db:
     connection: "{url:'jdbc://${db.host}:${db.port}/dbname}', user: 'root', pwd: 'rootpwd'}"
-    host: 192.168.0.4
+    host: 192.168.0.6
     port: 8080
     
 spring:
