@@ -1,6 +1,6 @@
 app:
     name: spring-boot-config-cloud
-    list: 1,2,4
+    list: 1,2,4,5
 
 db:
     connection: "{url:'jdbc://${db.host}:${db.port}/dbname}', user: 'root', pwd: 'rootpwd'}"
